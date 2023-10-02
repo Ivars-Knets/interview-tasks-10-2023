@@ -1,0 +1,117 @@
+.mainContainer{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.contentContainer{
+    width: 50%;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+/* list */
+    .contentContainer#listContainer{
+        overflow: hidden;
+    }
+
+    ul#todoItemList{
+        width: 100%;
+        height: 100%;
+        background-color: turquoise;
+        font-size: 1.1rem;
+        padding: 4px;
+        margin: 0;
+    }
+
+    li.toDoListItem{
+        width: 88%;
+        padding: 8px;
+        margin: 0px auto;
+        list-style: none;
+        border: 1px solid black;
+        background-color: #ddd;
+        cursor: pointer;
+        transition: 300ms;
+    }
+    li.toDoListItem:hover{ background-color: #fff;  }
+    li.toDoListItem.completed{ 
+        background-color: rgba(0, 255, 0, 0.395); 
+        text-decoration: line-through;
+    }
+    li.toDoListItem.completed:hover{ background-color: #84ff84;  }
+    li.toDoListItem.draggingOver{ background-color: rgb(62, 255, 62); }
+    
+
+    span.newListItemDragIcon::before{
+        content:"=";
+        padding: 0px 8px;
+        cursor: pointer;
+    }
+
+    span.newListItemText{
+        font-weight: bold;
+    }
+
+    span.newListItemDetailsButton{
+        float: right;
+        cursor: pointer;
+    }
+    span.newListItemDetailsButton:hover{
+        text-decoration: underline;
+    }
+/* !list */
+
+
+/* form */
+    .contentContainer#inputContainer{
+        padding: 12px;
+    }
+
+    .formButton{
+        display: inline-block;
+        width: 97%;
+        padding: 6px;
+        margin: 6px auto 10px;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold;
+        border-radius: 4px;
+        background-color: #aaa;
+        cursor: pointer;
+        transition: 300ms;
+    }
+    .formButton:hover{ background-color: #999; }
+    .formButton.submit{ background-color: #0000ff95; }
+    .formButton.submit:hover{ background-color: #0000ff; }
+    .formButton.remove{ background-color: #ff000095; }
+    .formButton.remove:hover{ background-color: #ff0000; }
+    
+
+    .formLabel{
+        font-weight: bold;
+    }
+    .formLabel::after{
+        content: " : ";
+    }
+
+    input[type="text"].formInput{
+        padding: 4px;
+        border-radius: 4px;
+    }
+    input[type="checkbox"].formInput{
+        transform: scale(1.4);
+    }
+
+    textarea.formDescription{
+        width: 100%;
+        min-height: 48px;
+        border-radius: 4px;
+    }
+/* !form */
+
+
+
+.hidden{
+    display: none;
+}

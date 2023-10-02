@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do Challenge</title>
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+    <main>
+        <div class="mainContainer">
+
+            <div id="listContainer" class="contentContainer">
+                <ul id="todoItemList"></ul>
+            </div>
+            <div id="inputContainer" class="contentContainer">
+                <form>
+
+                    <span 
+                        id="form-button-submit" 
+                        class="formButton submit" 
+                        onclick="HandleFormButtonClick()"
+                        tabindex="0"
+                    >Add Task</span>
+                    <br/>                    
+                    <span 
+                        id="form-button-remove" 
+                        class="formButton remove" 
+                        tabindex="0"
+                    >Remove Item</span>
+                    <input 
+                        id="todo-id" 
+                        name="todo-id"
+                        class="formInput hidden"
+                        value="new"
+                        title="id"
+                    />
+                    <input 
+                        id="todo-action" 
+                        name="todo-action"
+                        class="formInput hidden"
+                        value="add"
+                        title="id"
+                    />
+                    <br/>
+
+                    <label for="todo-completed" class="formLabel">Completed</label>
+                    <input 
+                        id="todo-completed" 
+                        name="todo-completed"
+                        type="checkbox"
+                        class="formInput"
+                    />
+                    <br/>
+                    <br/>
+
+                    <label for="todo-name" class="formLabel">Task Name</label>
+                    <input 
+                        id="todo-name" 
+                        name="todo-name"
+                        class="formInput"
+                    />
+                    <br/>
+                    <br/>
+
+                    <label for="todo-description" class="formLabel">Task Description</label>
+                    <br/>
+                    <textarea 
+                        id="todo-description" 
+                        name="todo-description"
+                        class="formDescription"
+                    ></textarea>
+
+                </form>
+            </div>
+        </div>
+        <div>
+            <span>Keyboard controls: </span>
+            <ul>
+                <li>TAB - tab over selectable items and inputs</li>
+                <li>SHIFT + TAB - tab over in the reverse direction</li>
+                <li>ENTER - trigger action</li>
+            </ul>
+        </div>
+    </main>
+    <script type="text/javascript" src="./index.js"></script>
+    <script type="text/javascript" src="./draggable.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "name": "Take A Breath",
+        "description": "Stop and take a moment to breath.",
+        "isCompleted": 1
+    },
+    {
+        "id": 2,
+        "name": "Drink Water",
+        "description": "Take a moment to drink some water.",
+        "isCompleted": 0
+    }   
+]
