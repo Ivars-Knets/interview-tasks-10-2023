@@ -188,6 +188,7 @@ function HandleRemoveItem(id){
 
     toDoItemList = newList;
 
+    HandelSetActionNew();
     RefreshList();
 };
 
