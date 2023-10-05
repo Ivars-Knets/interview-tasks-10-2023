@@ -15,7 +15,6 @@ let toDoItemList = [
     }   
 ];
 function GetData(){    
-    console.log("data", data);
     return toDoItemList;
 }
 

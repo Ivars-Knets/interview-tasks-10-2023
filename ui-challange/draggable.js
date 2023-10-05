@@ -56,8 +56,6 @@ document.addEventListener("drop", ({target})=>{
             } 
         };
 
-        //console.log("index check : ", index, indexDrop);
-
         if( index > indexDrop ){
             actualTarget.before( dragged );
         } else {
