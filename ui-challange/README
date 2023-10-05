@@ -3,6 +3,6 @@
 After reading the task description and user stories, I had a basic design in mind and started working on it, prioritizing functionality over style.
 
 To my understanding, in plain JavaScript there is no simple way to store information in a local JSON file without the use of server that could handle requests.
-So the tasks are stored in memory, in a simple array, and thus they are not persistent. And technically speaking, it is not even necessary for the app to function.
+So the information that would be stored somewhere else, is stored in memory, in a simple array, and thus they are not persistent. And technically speaking, it is not even necessary for the app to function.
 
 This task includes functions that handle "button" clicks, functions that generate new list items when element is added. 
